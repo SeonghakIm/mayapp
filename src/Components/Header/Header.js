@@ -1,6 +1,7 @@
 import { HashRouter as Router, Link } from "react-router-dom";
+import "./Header.css";
 export default () => (
-  <header>
+  <header className="nav">
     <ul>
       <Router>
         <li>
