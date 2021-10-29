@@ -107,3 +107,11 @@ const smilingDays = allDays.map(day => `^^${day}`);
 map은 기본적으로 index인자를 제공한다.
 const smilingDays = allDays.map((day, index)=>`#${index}^^${day}`);
 */
+
+//1.7 Array filter
+//filter는 함수를 실행해 true를 반환하는 값만 array에 넣는다.
+/*
+const numbers = [2, 45, 232, 12]
+
+const biggerThan15 = numbers.filter(num => num>15)
+biggerThan15 = [45, 232]
