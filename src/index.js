@@ -70,3 +70,29 @@ const {name, lastName, nationality: difName, favFood:{dinner, breakfast, dinner}
 nationality: difName은 nationality를 difName이라는 이름으로 저장한다는 것을 말하고
 nationality: {difName}은 nationality 안의 difName variable을 찾는 것을 말함(전혀 다른 의미)
 */
+
+//1.4 유용한 spread operator
+/*
+const days = ["Mon", "Tue", "Wed"];
+const otherDays = ["Thu", "Fri", "Sat"];
+
+const allDays = days + otherDays;
+이러면 allDays는 string이 된다.
+*/
+//어떻게 days와 otherDays를 합친 배열을 만들 수 있을까?
+//spread operator는 배열로부터 아이템을 가져와 unpack한다.
+/*
+const allDays = [days, otherDays];
+이러면 원소가 3개인 배열 두개를 포함한 배열이 되지만
+const allDays = [...days, otherDays];
+이러면 원소가 ["Mon", "Tue", "Wed", otherDays]가 되고
+const allDays = [...days, ...otherDays];
+이러면  ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]가 된다.
+*/
+
+/*
+const ob {first: "hi", second: "hello"};
+const ab {third: "안녕"};
+const two = {...ob, ...ab};
+일 때 {first: "hi", second: "hello", third: "안녕"}이 된다.
+*/
