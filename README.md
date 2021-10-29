@@ -126,3 +126,6 @@ if (numbers.includes(2)){
 
 2.0
 npx로 create-react-app을 하면 실행 이후에 create-react-app을 삭제해줌!(잘 쓰지 않고 outdated될 수 있기 때문에 컴퓨터에 둘 필요가 없음)
+
+2.1
+오직 router안에서만 route할 수 있음
