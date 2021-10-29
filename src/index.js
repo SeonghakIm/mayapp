@@ -115,3 +115,19 @@ const numbers = [2, 45, 232, 12]
 
 const biggerThan15 = numbers.filter(num => num>15)
 biggerThan15 = [45, 232]
+*/
+
+//1.8 forEach includes push
+/*
+const numbers = [2, 45, 232, 12];
+numbers.forEach(number => console.log(post));
+map과의 차이점! map은 함수를 실행한 결과값들을 담은 새로운 배열 리턴, forEach는 원소들에 대해 각자 실행만 함
+*/
+
+/*
+numbers.push(15);
+numbers = [2, 45, 232, 12, 15];
+if (numbers.includes(2)){
+    console.log("2 is here!");
+}
+*/
