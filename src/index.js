@@ -96,3 +96,14 @@ const ab {third: "안녕"};
 const two = {...ob, ...ab};
 일 때 {first: "hi", second: "hello", third: "안녕"}이 된다.
 */
+
+//1.5 Classes
+//생략
+
+//1.6 array map
+/* 다시 보는 맵 사용법
+const allDays = [...days, ...otherDays];
+const smilingDays = allDays.map(day => `^^${day}`);
+map은 기본적으로 index인자를 제공한다.
+const smilingDays = allDays.map((day, index)=>`#${index}^^${day}`);
+*/
