@@ -129,3 +129,8 @@ npx로 create-react-app을 하면 실행 이후에 create-react-app을 삭제해
 
 2.1
 오직 router안에서만 route할 수 있음
+
+2.2
+hashRouter는 화면 이동할 때 refresh가 되지 않아 앱의 느낌을 준다.
+browserRouter는 화면 이동할 때 refresh된다.
+exact가 없을 때 여러 화면이 동시에 겹쳐 보이는 건 Composition 기능 때문이다(두 개 이상의 Route를 렌더링하는 방식)
