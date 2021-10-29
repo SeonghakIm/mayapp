@@ -10,6 +10,7 @@ ReactDOM.render(
 
 
 //arrow function의 예시들
+/*
 const sayHello = (name = "human") => "hello " + name;
 
 const button = document.querySelector("button");
@@ -17,4 +18,12 @@ const button = document.querySelector("button");
 const handleClick = event => console.log(event);
 
 button.addEventListener("click", handleClick );
+*/
 //button.addEventListener("click", event => console.log(event) );
+
+//template literal의 예시들
+/*
+const sayHello = (name = "human") => "hello " + name;
+
+const sayHello = (name = "human") => `hello $(name)`;
+*/
