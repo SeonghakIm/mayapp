@@ -1,8 +1,8 @@
 import { HashRouter as Router, Link } from "react-router-dom";
-import "./Header.css";
+import styles from "./Header.module.css";
 export default () => (
-  <header className="nav">
-    <ul>
+  <header>
+    <ul className={styles.navList}>
       <Router>
         <li>
           <Link to="/">Home</Link>
