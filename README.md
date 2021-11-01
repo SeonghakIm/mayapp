@@ -185,3 +185,9 @@ const UserContextProvider = ({ children }) => (
 );
 이렇게 선언해주면 Provider의 모든 children은 name에 대한 접근 권한이 생긴다.
 일단 Seonghak을 출력하도록 수정
+9.2-3
+login과 logout(상태변경)추가
+
+9.3
+context 안에서 API를 fetch해버리면 다른 component들이 API를 들고올 필요가 없다.
+9.2에서는 screen과 header가 각자 useContext를 사용하는데, 이번에는 그럴 필요가 없이 세분화해보자
