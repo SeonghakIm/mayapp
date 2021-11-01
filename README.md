@@ -173,3 +173,15 @@ Redux는 다양한 state들의 많은 변화가 있을 때 적합
 9.2
 Hello, user!에서 Hello, Seonghak으로 바꿔보자
 state를 가지는 가장 큰 component가 app이므로 app.js 수정
+9.2-1
+Props를 app -> screen -> header로 전달
+비효율적이다.
+9.2-2
+context를 사용하기 위해 context.js를 생성
+const UserContextProvider = ({ children }) => (
+<UserContext.Provider value={{ name: "Seonghak" }}>
+{children}
+</UserContext.Provider>
+);
+이렇게 선언해주면 Provider의 모든 children은 name에 대한 접근 권한이 생긴다.
+일단 Seonghak을 출력하도록 수정
