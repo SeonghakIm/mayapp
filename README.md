@@ -146,3 +146,12 @@ css 파일 이름이 a.css였다면 a.module.css라는 식으로 변환해서 �
 import 할때 import "a.css"가 아닌 import 이름 from "a.module.css"와 같이 하고 html에서 className을 이름.클래스이름 과 같이 지정해야 한다.
 이래도 클래스이름을 기억해야한다는 귀찮음은 남는다.
 또 자바스크립트에서는 클래스이름 중간에 -를 쓸 수 없음([]로 감싸야함)
+
+3.3
+기존 Styled-components는 local. Global한 방법도 존재함
+css에서 position:fixed하면 스크롤 해도 그 위치에 남는다
+
+3.4
+header가 어떤 route에 있는지 보여주는 법
+withRouter는 Header가 component를 가질 수 있게 해준다.
+withRouter가 없으면 console.log(props)에서 props의 값이 없다.
