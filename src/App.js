@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Screen from "./Screen";
 
 function App() {
+  const [user] = useState({
+    name: "Seonghak",
+  });
   return (
     <>
-      <Screen />
+      <Screen user={user} />
     </>
   );
 }

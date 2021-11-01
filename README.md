@@ -169,3 +169,7 @@ State management library는 component에게 데이터를 전해주기 위해 존
 저장소의 선택지 중 하나가 Redux, 또는 UseContext가 될 수 있다.
 Context는 간단한 어플리케이션에 적합,
 Redux는 다양한 state들의 많은 변화가 있을 때 적합
+
+9.2
+Hello, user!에서 Hello, Seonghak으로 바꿔보자
+state를 가지는 가장 큰 component가 app이므로 app.js 수정

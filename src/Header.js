@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ user }) => {
   return (
     <header>
-      <a href="#">Home</a> Hello, user!
+      <a href="#">Home</a> Hello, {user.name}!
     </header>
   );
 };
