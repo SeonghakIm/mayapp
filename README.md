@@ -155,3 +155,17 @@ css에서 position:fixed하면 스크롤 해도 그 위치에 남는다
 header가 어떤 route에 있는지 보여주는 법
 withRouter는 Header가 component를 가질 수 있게 해준다.
 withRouter가 없으면 console.log(props)에서 props의 값이 없다.
+
+9.1
+react는 State와 Props를 가지고 있음!
+커다란 component(Higher-order component)가 props를 내부의 component들과 공유해서 props를 여러번 부를 필요가 없게 해야하고,
+그 State를 관리할 수(Prop들의 값을 바꿀 수) 있어야 한다.
+큰 Component가 data state를 담당하고, state management가 필요해지면
+Redux를 사용하면 된다.
+또한 여러 층으로 이루어진 component에서 props를 요구하면, 중간단계 component들은 props를 전달하기만할 뿐 사용하지 않는데 이는 비효율일 뿐더러 문제가 될 수 있다.
+
+component에게 데이터를 주는 대신 data 저장소(Object)를 따로 만든다.
+State management library는 component에게 데이터를 전해주기 위해 존재한다.
+저장소의 선택지 중 하나가 Redux, 또는 UseContext가 될 수 있다.
+Context는 간단한 어플리케이션에 적합,
+Redux는 다양한 state들의 많은 변화가 있을 때 적합
