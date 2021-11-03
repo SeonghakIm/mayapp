@@ -191,3 +191,13 @@ login과 logout(상태변경)추가
 9.3
 context 안에서 API를 fetch해버리면 다른 component들이 API를 들고올 필요가 없다.
 9.2에서는 screen과 header가 각자 useContext를 사용하는데, 이번에는 그럴 필요가 없이 세분화해보자
+
+9.6 Reducer
+component가 엄청나게 방대한 state를 가질 때 쓰인다.
+reducer는 state와 action을 인자로 가지며 action은 type을 가진다.
+action을 이용해 return하는 값이 state에 들어간다!!(state를 replace하는 object) 매우 중요함
+useReducer는 reducer 함수를 사용한다.
+action은 변수 이름일 뿐이다.
+useReducer는 state와 dispatch를 제공한다.
+dispatch는 function이며 action의 type값을 인자로 전달한다.
+dispatch는 그러면 reducer를 불러준다.(현재 state와 지정한 action의 type을 인자로 가지고)
