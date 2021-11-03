@@ -24,23 +24,19 @@ const reducer = (state, action) => {
         completed: state.completed.filter((toDo) => toDo.id !== action.payload),
       };
     case COMPLETE:
+      const target = state.toDos.find((toDo) => toDo.id === action.payload);
       return {
         ...state,
-        completed: [
-          ...state.completed,
-          ...state.toDos.filter((toDo) => toDo.id === action.payload),
-        ],
+        completed: [...state.completed, { ...target }],
         toDos: state.toDos.filter((toDo) => toDo.id !== action.payload),
       };
     case UNCOMPLETE:
+      const atarget = state.completed.find(
+        (complete) => complete.id === action.payload
+      );
       return {
         ...state,
-        toDos: [
-          ...state.toDos,
-          ...state.completed.filter(
-            (complete) => complete.id === action.payload
-          ),
-        ],
+        toDos: [...state.toDos, { ...atarget }],
         completed: state.completed.filter((toDo) => toDo.id !== action.payload),
       };
     default:
