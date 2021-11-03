@@ -195,9 +195,14 @@ context 안에서 API를 fetch해버리면 다른 component들이 API를 들고�
 9.6 Reducer
 component가 엄청나게 방대한 state를 가질 때 쓰인다.
 reducer는 state와 action을 인자로 가지며 action은 type을 가진다.
-action을 이용해 return하는 값이 state에 들어간다!!(state를 replace하는 object) 매우 중요함
+
+action을 이용해 return하는 값이 state에 들어간다!!(state를 replace하는 object를 리턴) 매우 중요함
+즉 return하는 값이 component의 state가 된다.
+
 useReducer는 reducer 함수를 사용한다.
 action은 변수 이름일 뿐이다.
 useReducer는 state와 dispatch를 제공한다.
 dispatch는 function이며 action의 type값을 인자로 전달한다.
 dispatch는 그러면 reducer를 불러준다.(현재 state와 지정한 action의 type을 인자로 가지고)
+dispatch에 굳이 type: "머시깽이"라고 적어줄 필요도 없다 "머시깽이"면 충분
+dispatch의 첫번째 인자가 action이 된다.
