@@ -206,3 +206,6 @@ dispatch는 function이며 action의 type값을 인자로 전달한다.
 dispatch는 그러면 reducer를 불러준다.(현재 state와 지정한 action의 type을 인자로 가지고)
 dispatch에 굳이 type: "머시깽이"라고 적어줄 필요도 없다 "머시깽이"면 충분
 dispatch의 첫번째 인자가 action이 된다.
+
+9.7
+단순한 어레이도 내용물을 push해 변화시키는 것보다 완전히 새로운 array로 대체하는 것이 낫다.
